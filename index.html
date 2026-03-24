@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
 :root {
   --bordo: #6B0F1A;
   --bordo-koyu: #0D0205;
@@ -21,9 +21,9 @@
   --metin: #C4B5A0;
   --metin-koyu: #8A7B6A;
 }
-
+ 
 html { scroll-behavior: smooth; }
-
+ 
 body {
   background: var(--bordo-koyu);
   color: var(--metin);
@@ -32,7 +32,7 @@ body {
   line-height: 1.7;
   overflow-x: hidden;
 }
-
+ 
 /* ===== SCROLL REVEAL ===== */
 .reveal {
   opacity: 0;
@@ -67,7 +67,7 @@ body {
 .reveal-delay-4 { transition-delay: 0.4s; }
 .reveal-delay-5 { transition-delay: 0.5s; }
 .reveal-delay-6 { transition-delay: 0.6s; }
-
+ 
 /* ===== NAV ===== */
 nav {
   position: fixed;
@@ -88,7 +88,7 @@ nav.scrolled {
   border-bottom-color: rgba(201,168,76,0.15);
   backdrop-filter: blur(20px);
 }
-
+ 
 .nav-logo {
   font-family: 'Cinzel', serif;
   font-size: 22px;
@@ -99,13 +99,13 @@ nav.scrolled {
   transition: letter-spacing 0.3s;
 }
 .nav-logo:hover { letter-spacing: 8px; }
-
+ 
 .nav-menu {
   display: flex;
   gap: 40px;
   list-style: none;
 }
-
+ 
 .nav-menu a {
   font-family: 'Cinzel', serif;
   font-size: 10px;
@@ -127,7 +127,7 @@ nav.scrolled {
 }
 .nav-menu a:hover { color: var(--altin); }
 .nav-menu a:hover::after { width: 100%; }
-
+ 
 /* HAMBURGEr */
 .hamburger {
   display: none;
@@ -147,11 +147,11 @@ nav.scrolled {
 .hamburger.acik span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .hamburger.acik span:nth-child(2) { opacity: 0; }
 .hamburger.acik span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
+ 
 /* ===== SAYFALAR ===== */
 .sayfa { display: none; min-height: 100vh; padding-top: 72px; }
 .sayfa.aktif { display: block; }
-
+ 
 /* ===== PARÇACIK KANVASİ ===== */
 #particles-canvas {
   position: fixed;
@@ -160,7 +160,7 @@ nav.scrolled {
   pointer-events: none;
   z-index: 0;
 }
-
+ 
 /* ===== HERO ===== */
 .hero {
   min-height: 100vh;
@@ -173,7 +173,7 @@ nav.scrolled {
   position: relative;
   overflow: hidden;
 }
-
+ 
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -182,7 +182,7 @@ nav.scrolled {
     radial-gradient(ellipse 40% 30% at 15% 15%, rgba(201,168,76,0.04) 0%, transparent 60%),
     radial-gradient(ellipse 40% 30% at 85% 85%, rgba(201,168,76,0.04) 0%, transparent 60%);
 }
-
+ 
 /* Parallax elementler */
 .parallax-el {
   position: absolute;
@@ -207,7 +207,7 @@ nav.scrolled {
   background: radial-gradient(circle, rgba(139,16,32,0.3) 0%, transparent 70%);
   top: 40%; right: 10%;
 }
-
+ 
 /* Dekoratif çizgiler */
 .deco-line {
   position: absolute;
@@ -217,13 +217,13 @@ nav.scrolled {
 }
 .deco-line-1 { top: 30%; }
 .deco-line-2 { top: 70%; }
-
+ 
 .hero-icerik {
   position: relative;
   z-index: 2;
   max-width: 900px;
 }
-
+ 
 .hero-on-yazi {
   font-family: 'Cinzel', serif;
   font-size: 10px;
@@ -233,7 +233,7 @@ nav.scrolled {
   margin-bottom: 32px;
   animation: fadeInDown 1s ease both;
 }
-
+ 
 .hero-baslik {
   font-family: 'Cinzel', serif;
   font-size: clamp(64px, 12vw, 140px);
@@ -245,17 +245,17 @@ nav.scrolled {
   animation: fadeInUp 1s ease 0.2s both;
   text-shadow: 0 0 80px rgba(201,168,76,0.15);
 }
-
+ 
 .hero-nokta {
   color: var(--altin);
   animation: pulse-gold 3s ease infinite;
 }
-
+ 
 @keyframes pulse-gold {
   0%, 100% { opacity: 1; text-shadow: 0 0 20px rgba(201,168,76,0.5); }
   50% { opacity: 0.7; text-shadow: 0 0 40px rgba(201,168,76,0.8); }
 }
-
+ 
 .hero-alt {
   font-family: 'Cinzel', serif;
   font-size: clamp(9px, 1.2vw, 12px);
@@ -265,7 +265,7 @@ nav.scrolled {
   margin-bottom: 40px;
   animation: fadeInUp 1s ease 0.3s both;
 }
-
+ 
 .altin-cizgi {
   width: 120px;
   height: 1px;
@@ -273,19 +273,19 @@ nav.scrolled {
   margin: 0 auto 40px;
   animation: expandLine 1.2s ease 0.4s both;
 }
-
+ 
 @keyframes expandLine {
   from { width: 0; opacity: 0; }
   to { width: 120px; opacity: 1; }
 }
-
+ 
 .altin-cizgi-kisa {
   width: 60px;
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--altin), transparent);
   margin: 0 auto;
 }
-
+ 
 .hero-slogan {
   font-size: clamp(17px, 2.2vw, 24px);
   color: var(--metin);
@@ -295,7 +295,7 @@ nav.scrolled {
   animation: fadeInUp 1s ease 0.5s both;
   line-height: 1.5;
 }
-
+ 
 .hero-butonlar {
   display: flex;
   gap: 20px;
@@ -303,7 +303,7 @@ nav.scrolled {
   flex-wrap: wrap;
   animation: fadeInUp 1s ease 0.6s both;
 }
-
+ 
 /* BUTONLAR */
 .btn-altin {
   font-family: 'Cinzel', serif;
@@ -330,7 +330,7 @@ nav.scrolled {
 }
 .btn-altin:hover { transform: translateY(-3px); box-shadow: 0 10px 40px rgba(201,168,76,0.3); }
 .btn-altin:hover::before { left: 100%; }
-
+ 
 .btn-cerceve {
   font-family: 'Cinzel', serif;
   font-size: 10px;
@@ -356,7 +356,7 @@ nav.scrolled {
 }
 .btn-cerceve:hover { border-color: var(--altin); box-shadow: 0 10px 40px rgba(201,168,76,0.1); transform: translateY(-3px); }
 .btn-cerceve:hover::before { transform: scaleX(1); }
-
+ 
 /* ===== SCROLL GÖSTERGESI ===== */
 .scroll-indicator {
   position: absolute;
@@ -395,7 +395,7 @@ nav.scrolled {
   0% { transform: translateY(0); opacity: 1; }
   100% { transform: translateY(10px); opacity: 0; }
 }
-
+ 
 /* ===== STAT ŞERİDİ ===== */
 .stat-serit {
   background: rgba(107,15,26,0.25);
@@ -415,9 +415,9 @@ nav.scrolled {
   inset: 0;
   background: linear-gradient(135deg, rgba(107,15,26,0.1) 0%, rgba(201,168,76,0.02) 100%);
 }
-
+ 
 .stat-item { position: relative; }
-
+ 
 .stat-sayi {
   font-family: 'Cinzel', serif;
   font-size: 44px;
@@ -430,7 +430,7 @@ nav.scrolled {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-
+ 
 .stat-etiket {
   font-family: 'Cinzel', serif;
   font-size: 10px;
@@ -439,14 +439,14 @@ nav.scrolled {
   opacity: 0.6;
   text-transform: uppercase;
 }
-
+ 
 .stat-ayirac {
   position: absolute;
   right: 0; top: 20%; bottom: 20%;
   width: 1px;
   background: linear-gradient(180deg, transparent, rgba(201,168,76,0.15), transparent);
 }
-
+ 
 /* ===== BÖLÜM BAŞLIKLARI ===== */
 .bolum-on-yazi {
   font-family: 'Cinzel', serif;
@@ -457,7 +457,7 @@ nav.scrolled {
   margin-bottom: 16px;
   text-transform: uppercase;
 }
-
+ 
 .bolum-baslik {
   font-family: 'Cinzel', serif;
   font-size: clamp(22px, 3vw, 34px);
@@ -468,7 +468,7 @@ nav.scrolled {
   margin-bottom: 14px;
   line-height: 1.2;
 }
-
+ 
 .bolum-alt {
   font-size: 16px;
   color: var(--altin-acik);
@@ -480,7 +480,7 @@ nav.scrolled {
   margin-left: auto;
   margin-right: auto;
 }
-
+ 
 /* ===== ÖZELLİKLER ===== */
 .ozellikler {
   padding: 100px 60px;
@@ -489,18 +489,18 @@ nav.scrolled {
   position: relative;
   z-index: 1;
 }
-
+ 
 .ozellik-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
 }
-
+ 
 /* 3D KART */
 .card-3d-wrapper {
   perspective: 1000px;
 }
-
+ 
 .card-3d {
   background: linear-gradient(145deg, rgba(107,15,26,0.5) 0%, rgba(30,5,8,0.8) 100%);
   border: 1px solid rgba(201,168,76,0.12);
@@ -511,7 +511,7 @@ nav.scrolled {
   will-change: transform;
   cursor: default;
 }
-
+ 
 .card-3d::before {
   content: '';
   position: absolute;
@@ -520,13 +520,13 @@ nav.scrolled {
   opacity: 0;
   transition: opacity 0.3s;
 }
-
+ 
 .card-3d:hover::before { opacity: 1; }
 .card-3d:hover {
   border-color: rgba(201,168,76,0.35);
   box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 30px rgba(107,15,26,0.3);
 }
-
+ 
 .card-shine {
   position: absolute;
   inset: 0;
@@ -536,7 +536,7 @@ nav.scrolled {
   pointer-events: none;
 }
 .card-3d:hover .card-shine { opacity: 1; }
-
+ 
 .ozellik-numara {
   font-family: 'Cinzel', serif;
   font-size: 56px;
@@ -547,14 +547,14 @@ nav.scrolled {
   right: 20px;
   line-height: 1;
 }
-
+ 
 .ozellik-ikon {
   font-size: 30px;
   margin-bottom: 20px;
   display: block;
   filter: drop-shadow(0 0 10px rgba(201,168,76,0.3));
 }
-
+ 
 .ozellik-baslik {
   font-family: 'Cinzel', serif;
   font-size: 13px;
@@ -564,14 +564,14 @@ nav.scrolled {
   margin-bottom: 14px;
   text-transform: uppercase;
 }
-
+ 
 .ozellik-metin {
   font-size: 15px;
   color: var(--metin);
   opacity: 0.85;
   line-height: 1.7;
 }
-
+ 
 /* ===== KULÜP MODELİ ===== */
 .model-hero {
   padding: 100px 60px 50px;
@@ -579,13 +579,13 @@ nav.scrolled {
   max-width: 750px;
   margin: 0 auto;
 }
-
+ 
 .kademe-bolum {
   padding: 20px 60px 80px;
   max-width: 1000px;
   margin: 0 auto;
 }
-
+ 
 .kademe-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -594,7 +594,7 @@ nav.scrolled {
   margin-bottom: 80px;
   position: relative;
 }
-
+ 
 .kademe-kart {
   background: linear-gradient(180deg, rgba(20,3,6,0.95) 0%, rgba(10,2,4,0.98) 100%);
   padding: 48px 28px;
@@ -603,7 +603,7 @@ nav.scrolled {
   overflow: hidden;
   transition: background 0.4s;
 }
-
+ 
 .kademe-kart::before {
   content: '';
   position: absolute;
@@ -613,10 +613,10 @@ nav.scrolled {
   transform: scaleX(0);
   transition: transform 0.5s;
 }
-
+ 
 .kademe-kart:hover::before { transform: scaleX(1); }
 .kademe-kart:hover { background: linear-gradient(180deg, rgba(107,15,26,0.3) 0%, rgba(20,3,6,0.95) 100%); }
-
+ 
 .kademe-sayac {
   position: absolute;
   top: 20px; right: 24px;
@@ -626,7 +626,7 @@ nav.scrolled {
   color: rgba(201,168,76,0.04);
   line-height: 1;
 }
-
+ 
 .kademe-unvan {
   font-family: 'Cinzel', serif;
   font-size: 9px;
@@ -636,13 +636,13 @@ nav.scrolled {
   text-transform: uppercase;
   margin-bottom: 16px;
 }
-
+ 
 .kademe-sembol {
   font-size: 40px;
   margin-bottom: 16px;
   display: block;
 }
-
+ 
 .kademe-isim {
   font-family: 'Cinzel', serif;
   font-size: 24px;
@@ -651,7 +651,7 @@ nav.scrolled {
   letter-spacing: 4px;
   margin-bottom: 6px;
 }
-
+ 
 .kademe-sinif {
   font-size: 13px;
   color: var(--altin-acik);
@@ -659,14 +659,14 @@ nav.scrolled {
   margin-bottom: 24px;
   opacity: 0.7;
 }
-
+ 
 .kademe-aciklama {
   font-size: 14px;
   color: var(--metin);
   opacity: 0.8;
   line-height: 1.7;
 }
-
+ 
 /* Ok bağlantısı */
 .kademe-ok {
   position: absolute;
@@ -685,19 +685,19 @@ nav.scrolled {
   color: var(--altin);
   font-size: 16px;
 }
-
+ 
 /* Kurallar */
 .kurallar {
   padding: 0 60px 100px;
   max-width: 1000px;
   margin: 0 auto;
 }
-
+ 
 .kurallar-baslik {
   text-align: center;
   margin-bottom: 50px;
 }
-
+ 
 .kural-item {
   display: grid;
   grid-template-columns: 60px 1fr;
@@ -708,7 +708,7 @@ nav.scrolled {
   transition: border-color 0.3s;
 }
 .kural-item:hover { border-bottom-color: rgba(201,168,76,0.2); }
-
+ 
 .kural-no {
   font-family: 'Cinzel', serif;
   font-size: 28px;
@@ -719,9 +719,9 @@ nav.scrolled {
   transition: color 0.3s;
 }
 .kural-item:hover .kural-no { color: rgba(201,168,76,0.5); }
-
+ 
 .kural-icerik { flex: 1; }
-
+ 
 .kural-baslik {
   font-family: 'Cinzel', serif;
   font-size: 13px;
@@ -730,14 +730,14 @@ nav.scrolled {
   letter-spacing: 2px;
   margin-bottom: 8px;
 }
-
+ 
 .kural-metin {
   font-size: 15px;
   color: var(--metin);
   opacity: 0.8;
   line-height: 1.7;
 }
-
+ 
 /* ===== 50 ESER ===== */
 .kaynaklar-bolum {
   padding: 80px 60px;
@@ -785,16 +785,16 @@ nav.scrolled {
   .kaynaklar-grid { grid-template-columns: 1fr; }
   .kaynaklar-bolum { padding: 60px 24px; }
 }
-
+ 
 /* ===== DEGERLER ===== */
-
+ 
 .degerler-hero {
   padding: 100px 60px 50px;
   text-align: center;
   max-width: 750px;
   margin: 0 auto;
 }
-
+ 
 .degerler-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -803,7 +803,7 @@ nav.scrolled {
   max-width: 1100px;
   margin: 0 auto;
 }
-
+ 
 .deger-kart {
   background: linear-gradient(180deg, rgba(15,3,5,0.95) 0%, rgba(8,1,3,0.98) 100%);
   border: 1px solid rgba(201,168,76,0.15);
@@ -811,7 +811,7 @@ nav.scrolled {
   transition: all 0.4s;
   position: relative;
 }
-
+ 
 .deger-kart::after {
   content: '';
   position: absolute;
@@ -821,14 +821,14 @@ nav.scrolled {
   transform: scaleX(0);
   transition: transform 0.5s;
 }
-
+ 
 .deger-kart:hover {
   border-color: rgba(201,168,76,0.35);
   transform: translateY(-6px);
   box-shadow: 0 30px 80px rgba(0,0,0,0.5), 0 0 40px rgba(107,15,26,0.3);
 }
 .deger-kart:hover::after { transform: scaleX(1); }
-
+ 
 .deger-foto {
   width: 100%;
   aspect-ratio: 4 / 3;
@@ -840,7 +840,7 @@ nav.scrolled {
   border-bottom: 1px solid rgba(201,168,76,0.1);
   position: relative;
 }
-
+ 
 .deger-foto img {
   width: 100%;
   height: 100%;
@@ -851,7 +851,7 @@ nav.scrolled {
   transition: transform 0.6s ease, opacity 0.5s;
 }
 .deger-kart:hover .deger-foto img { transform: scale(1.05); }
-
+ 
 .foto-daire {
   width: 120px; height: 120px;
   border: 1px solid rgba(201,168,76,0.2);
@@ -867,7 +867,7 @@ nav.scrolled {
   border-color: rgba(201,168,76,0.5);
   box-shadow: 0 0 40px rgba(201,168,76,0.15);
 }
-
+ 
 .foto-yazi {
   font-family: 'Cinzel', serif;
   font-size: 9px;
@@ -877,11 +877,11 @@ nav.scrolled {
   transition: color 0.3s;
 }
 .deger-kart:hover .foto-yazi { color: rgba(201,168,76,0.6); }
-
+ 
 .deger-bilgi {
   padding: 32px 28px;
 }
-
+ 
 .deger-donem {
   font-family: 'Cinzel', serif;
   font-size: 9px;
@@ -890,7 +890,7 @@ nav.scrolled {
   opacity: 0.5;
   margin-bottom: 10px;
 }
-
+ 
 .deger-isim {
   font-family: 'Cinzel', serif;
   font-size: 20px;
@@ -899,7 +899,7 @@ nav.scrolled {
   letter-spacing: 2px;
   margin-bottom: 4px;
 }
-
+ 
 .deger-tarih {
   font-size: 12px;
   color: var(--altin);
@@ -907,7 +907,7 @@ nav.scrolled {
   opacity: 0.6;
   margin-bottom: 20px;
 }
-
+ 
 .deger-metin {
   font-size: 15px;
   color: var(--metin);
@@ -915,13 +915,13 @@ nav.scrolled {
   line-height: 1.7;
   margin-bottom: 20px;
 }
-
+ 
 .deger-etiket {
   background: rgba(201,168,76,0.06);
   border: 1px solid rgba(201,168,76,0.15);
   padding: 12px 16px;
 }
-
+ 
 .etiket-ust {
   font-family: 'Cinzel', serif;
   font-size: 8px;
@@ -930,13 +930,13 @@ nav.scrolled {
   opacity: 0.5;
   margin-bottom: 5px;
 }
-
+ 
 .etiket-alt {
   font-size: 14px;
   color: var(--krem);
   font-style: italic;
 }
-
+ 
 /* Sentez */
 .sentez-bolum {
   background: linear-gradient(135deg, rgba(107,15,26,0.2), rgba(42,6,8,0.4));
@@ -954,20 +954,20 @@ nav.scrolled {
   background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(107,15,26,0.2), transparent);
 }
 .sentez-icerik { max-width: 680px; margin: 0 auto; position: relative; }
-
+ 
 /* Atalar grid */
 .atalar-bolum {
   padding: 80px 60px 100px;
   max-width: 1100px;
   margin: 0 auto;
 }
-
+ 
 .atalar-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
-
+ 
 .ata-kart {
   background: linear-gradient(155deg, rgba(30,5,8,0.95) 0%, rgba(10,2,4,0.98) 100%);
   border: 1px solid rgba(201,168,76,0.12);
@@ -976,7 +976,7 @@ nav.scrolled {
   position: relative;
   overflow: hidden;
 }
-
+ 
 .ata-kart::before {
   content: '';
   position: absolute;
@@ -986,14 +986,14 @@ nav.scrolled {
   transform: scaleX(0);
   transition: transform 0.4s;
 }
-
+ 
 .ata-kart:hover {
   border-color: rgba(201,168,76,0.3);
   transform: translateY(-5px);
   box-shadow: 0 20px 60px rgba(0,0,0,0.4);
 }
 .ata-kart:hover::before { transform: scaleX(1); }
-
+ 
 .ata-donem {
   font-family: 'Cinzel', serif;
   font-size: 9px;
@@ -1002,7 +1002,7 @@ nav.scrolled {
   opacity: 0.5;
   margin-bottom: 10px;
 }
-
+ 
 .ata-isim {
   font-family: 'Cinzel', serif;
   font-size: 15px;
@@ -1011,7 +1011,7 @@ nav.scrolled {
   margin-bottom: 4px;
   line-height: 1.3;
 }
-
+ 
 .ata-tarih {
   font-size: 11px;
   color: var(--altin-acik);
@@ -1019,7 +1019,7 @@ nav.scrolled {
   opacity: 0.6;
   margin-bottom: 14px;
 }
-
+ 
 .ata-metin {
   font-size: 13px;
   color: var(--metin);
@@ -1027,13 +1027,13 @@ nav.scrolled {
   line-height: 1.6;
   margin-bottom: 14px;
 }
-
+ 
 .ata-etiket {
   background: rgba(201,168,76,0.06);
   border: 1px solid rgba(201,168,76,0.15);
   padding: 9px 12px;
 }
-
+ 
 .ata-etiket-ust {
   font-family: 'Cinzel', serif;
   font-size: 8px;
@@ -1042,13 +1042,13 @@ nav.scrolled {
   opacity: 0.5;
   margin-bottom: 3px;
 }
-
+ 
 .ata-etiket-alt {
   font-size: 12px;
   color: var(--krem);
   font-style: italic;
 }
-
+ 
 /* ===== BAŞVURU ===== */
 .iletisim-hero {
   padding: 100px 60px 50px;
@@ -1056,14 +1056,14 @@ nav.scrolled {
   max-width: 750px;
   margin: 0 auto;
 }
-
+ 
 .basvuru-bilgi {
   background: rgba(201,168,76,0.05);
   border: 1px solid rgba(201,168,76,0.2);
   padding: 30px;
   margin-bottom: 44px;
 }
-
+ 
 .basvuru-bilgi-baslik {
   font-family: 'Cinzel', serif;
   font-size: 10px;
@@ -1071,7 +1071,7 @@ nav.scrolled {
   color: var(--altin);
   margin-bottom: 16px;
 }
-
+ 
 .basvuru-bilgi p {
   font-size: 14px;
   color: var(--metin);
@@ -1080,13 +1080,13 @@ nav.scrolled {
   margin-bottom: 6px;
 }
 .basvuru-bilgi p:last-child { margin-bottom: 0; }
-
+ 
 .form-alan {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-
+ 
 .form-label {
   font-family: 'Cinzel', serif;
   font-size: 10px;
@@ -1094,7 +1094,7 @@ nav.scrolled {
   color: var(--altin);
   text-transform: uppercase;
 }
-
+ 
 .form-input, .form-select, .form-textarea {
   background: rgba(107,15,26,0.2);
   border: 1px solid rgba(201,168,76,0.15);
@@ -1114,7 +1114,7 @@ nav.scrolled {
 .form-select { cursor: pointer; }
 .form-textarea { resize: vertical; line-height: 1.7; min-height: 140px; }
 .form-input::placeholder, .form-textarea::placeholder { color: rgba(196,181,160,0.3); }
-
+ 
 /* ===== İLETİŞİM ===== */
 .iletisim-grid {
   display: grid;
@@ -1124,7 +1124,7 @@ nav.scrolled {
   max-width: 1000px;
   margin: 0 auto;
 }
-
+ 
 .iletisim-kart {
   background: linear-gradient(155deg, rgba(20,3,6,0.9) 0%, rgba(8,1,3,0.95) 100%);
   border: 1px solid rgba(201,168,76,0.12);
@@ -1149,9 +1149,9 @@ nav.scrolled {
   box-shadow: 0 20px 50px rgba(0,0,0,0.4);
 }
 .iletisim-kart:hover::before { transform: scaleX(1); }
-
+ 
 .iletisim-ikon { font-size: 36px; margin-bottom: 20px; display: block; }
-
+ 
 .iletisim-baslik {
   font-family: 'Cinzel', serif;
   font-size: 11px;
@@ -1159,14 +1159,14 @@ nav.scrolled {
   color: var(--altin);
   margin-bottom: 12px;
 }
-
+ 
 .iletisim-metin {
   font-size: 14px;
   color: var(--metin);
   opacity: 0.8;
   line-height: 1.7;
 }
-
+ 
 /* ===== FOOTER ===== */
 footer {
   background: rgba(0,0,0,0.5);
@@ -1182,7 +1182,7 @@ footer::before {
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent);
 }
-
+ 
 .footer-logo {
   font-family: 'Cinzel', serif;
   font-size: 28px;
@@ -1195,7 +1195,7 @@ footer::before {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-
+ 
 .footer-metin {
   font-size: 12px;
   color: var(--metin);
@@ -1203,7 +1203,7 @@ footer::before {
   font-style: italic;
   letter-spacing: 1px;
 }
-
+ 
 /* ===== ANİMASYONLAR ===== */
 @keyframes fadeInDown {
   from { opacity: 0; transform: translateY(-20px); }
@@ -1213,7 +1213,7 @@ footer::before {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
+ 
 /* ===== ALTÇIZGI SEPERATÖRü ===== */
 .separator {
   display: flex;
@@ -1235,7 +1235,227 @@ footer::before {
   transform: rotate(45deg);
   opacity: 0.6;
 }
-
+ 
+/* ===== GALERİ ===== */
+.galeri-hero {
+  padding: 100px 60px 50px;
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto;
+}
+ 
+.galeri-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 20px 60px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+ 
+.galeri-kart {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(201,168,76,0.12);
+  aspect-ratio: 4/3;
+  background: linear-gradient(145deg, rgba(107,15,26,0.4) 0%, rgba(20,3,6,0.8) 100%);
+  cursor: pointer;
+  transition: border-color 0.3s, transform 0.3s;
+}
+.galeri-kart:hover {
+  border-color: rgba(201,168,76,0.4);
+  transform: scale(1.02);
+}
+.galeri-kart-icerik {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+.galeri-kart-ikon {
+  font-size: 36px;
+  margin-bottom: 12px;
+  opacity: 0.5;
+}
+.galeri-kart-etiket {
+  font-family: 'Cinzel', serif;
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: rgba(201,168,76,0.4);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.galeri-kart-baslik {
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  color: var(--metin);
+  opacity: 0.5;
+  line-height: 1.5;
+}
+.galeri-kart-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(107,15,26,0.15);
+  border: 1px dashed rgba(201,168,76,0.2);
+  margin: 12px;
+}
+ 
+.galeri-bilgi {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  padding: 0 60px;
+  text-align: center;
+}
+.galeri-bilgi-kutu {
+  background: rgba(201,168,76,0.05);
+  border: 1px solid rgba(201,168,76,0.15);
+  padding: 36px 40px;
+}
+.galeri-bilgi-baslik {
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: var(--altin);
+  margin-bottom: 16px;
+}
+.galeri-bilgi p {
+  font-size: 15px;
+  color: var(--metin);
+  opacity: 0.8;
+  line-height: 1.8;
+}
+ 
+/* ===== SOSYALFEST ===== */
+.sosyalfest-hero {
+  padding: 100px 60px 50px;
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto;
+}
+.sosyalfest-rozet {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(201,168,76,0.08);
+  border: 1px solid rgba(201,168,76,0.25);
+  padding: 10px 20px;
+  margin-bottom: 32px;
+  font-family: 'Cinzel', serif;
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: var(--altin);
+}
+.sosyalfest-bilgi-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding: 20px 60px 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.sf-bilgi-kart {
+  background: linear-gradient(155deg, rgba(20,3,6,0.95) 0%, rgba(10,2,4,0.98) 100%);
+  border: 1px solid rgba(201,168,76,0.12);
+  padding: 36px 28px;
+  transition: all 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+.sf-bilgi-kart::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(201,168,76,0.4), transparent);
+  transform: scaleX(0);
+  transition: transform 0.4s;
+}
+.sf-bilgi-kart:hover { border-color: rgba(201,168,76,0.3); transform: translateY(-4px); }
+.sf-bilgi-kart:hover::before { transform: scaleX(1); }
+.sf-bilgi-ikon { font-size: 32px; margin-bottom: 16px; display: block; }
+.sf-bilgi-baslik {
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: var(--altin);
+  margin-bottom: 10px;
+}
+.sf-bilgi-deger {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--krem);
+  margin-bottom: 8px;
+  font-family: 'Cinzel', serif;
+}
+.sf-bilgi-aciklama {
+  font-size: 14px;
+  color: var(--metin);
+  opacity: 0.75;
+  line-height: 1.7;
+}
+ 
+.sosyalfest-hedefler {
+  padding: 20px 60px 80px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.hedef-item {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 20px;
+  align-items: start;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(201,168,76,0.07);
+  transition: border-color 0.3s;
+}
+.hedef-item:hover { border-bottom-color: rgba(201,168,76,0.2); }
+.hedef-no {
+  font-family: 'Cinzel', serif;
+  font-size: 26px;
+  font-weight: 900;
+  color: rgba(201,168,76,0.2);
+  line-height: 1;
+  padding-top: 4px;
+  transition: color 0.3s;
+}
+.hedef-item:hover .hedef-no { color: rgba(201,168,76,0.5); }
+.hedef-baslik {
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--altin);
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+.hedef-metin {
+  font-size: 15px;
+  color: var(--metin);
+  opacity: 0.8;
+  line-height: 1.7;
+}
+ 
+.sosyalfest-belge-banner {
+  background: linear-gradient(135deg, rgba(107,15,26,0.3), rgba(42,6,8,0.5));
+  border-top: 1px solid rgba(201,168,76,0.1);
+  border-bottom: 1px solid rgba(201,168,76,0.1);
+  padding: 60px 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.sosyalfest-belge-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(107,15,26,0.2), transparent);
+}
+.banner-icerik { max-width: 600px; margin: 0 auto; position: relative; }
+ 
 /* ===== MOBİL ===== */
 @media (max-width: 768px) {
   nav { padding: 0 20px; }
@@ -1262,7 +1482,7 @@ footer::before {
     letter-spacing: 4px;
     border-bottom: 1px solid rgba(201,168,76,0.06);
   }
-
+ 
   .hero { padding: 60px 24px 80px; }
   .stat-serit { grid-template-columns: repeat(2,1fr); padding: 40px 24px; }
   .stat-ayirac:nth-child(even) { display: none; }
@@ -1282,16 +1502,21 @@ footer::before {
   .iletisim-hero { padding: 70px 24px 40px; }
   .iletisim-grid { grid-template-columns: 1fr; padding: 20px 24px 60px; }
   .sentez-bolum { padding: 60px 24px; }
+  .galeri-grid { grid-template-columns: repeat(2, 1fr); padding: 20px 24px 60px; }
+  .galeri-bilgi { padding: 0 24px; }
+  .sosyalfest-hero { padding: 70px 24px 40px; }
+  .sosyalfest-bilgi-grid { grid-template-columns: 1fr; padding: 20px 24px 60px; }
+  .sosyalfest-hedefler { padding: 20px 24px 70px; }
   footer { padding: 50px 24px; }
   .basvuru-form-wrapper { padding: 0 24px 60px; }
 }
 </style>
 </head>
 <body>
-
+ 
 <!-- Parallax Arka Plan -->
 <canvas id="particles-canvas"></canvas>
-
+ 
 <!-- NAVİGASYON -->
 <nav id="navbar">
   <div class="nav-logo" data-sayfa="anasayfa">T.A.D.A</div>
@@ -1302,14 +1527,16 @@ footer::before {
     <li><a href="#" data-sayfa="anasayfa">Ana Sayfa</a></li>
     <li><a href="#" data-sayfa="model">Kulüp Modeli</a></li>
     <li><a href="#" data-sayfa="degerler">Değerlerimiz</a></li>
+    <li><a href="#" data-sayfa="galeri">Galeri</a></li>
+    <li><a href="#" data-sayfa="sosyalfest">SosyalFest</a></li>
     <li><a href="#" data-sayfa="iletisim">İletişim</a></li>
     <li><a href="#" data-sayfa="basvuru">Başvuru</a></li>
   </ul>
 </nav>
-
+ 
 <!-- ===== ANA SAYFA ===== -->
 <div id="anasayfa" class="sayfa aktif">
-
+ 
   <div class="hero" id="hero-section">
     <div class="parallax-el orb-1" data-speed="0.3"></div>
     <div class="parallax-el orb-2" data-speed="0.2"></div>
@@ -1317,7 +1544,7 @@ footer::before {
     <div class="deco-line deco-line-1"></div>
     <div class="deco-line deco-line-2"></div>
     <div class="hero-bg"></div>
-
+ 
     <div class="hero-icerik">
       <div class="hero-on-yazi">TARİHİN ARKA DÜNYASI ATÖLYELERİ</div>
       <h1 class="hero-baslik">T<span class="hero-nokta">.</span>A<span class="hero-nokta">.</span>D<span class="hero-nokta">.</span>A</h1>
@@ -1329,13 +1556,13 @@ footer::before {
         <button class="btn-cerceve" data-sayfa="degerler">Değerlerimiz</button>
       </div>
     </div>
-
+ 
     <div class="scroll-indicator" onclick="document.querySelector('.stat-serit').scrollIntoView({behavior:'smooth'})">
       <div class="scroll-text">AŞAĞI KAYDIRIN</div>
       <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
     </div>
   </div>
-
+ 
   <!-- İstatistik -->
   <div class="stat-serit">
     <div class="stat-item reveal">
@@ -1358,7 +1585,7 @@ footer::before {
       <div class="stat-etiket">Tarih Bilinci</div>
     </div>
   </div>
-
+ 
   <!-- Özellikler -->
   <div class="ozellikler">
     <div class="reveal" style="text-align:center;">
@@ -1367,9 +1594,9 @@ footer::before {
       <div class="separator"><div class="separator-cizgi"></div><div class="separator-nokta"></div><div class="separator-cizgi"></div></div>
       <div class="bolum-alt" style="margin-bottom:0">Çırak-usta devir teslim modeliyle sürdürülebilir tarih eğitimi</div>
     </div>
-
+ 
     <div style="height:56px"></div>
-
+ 
     <div class="ozellik-grid">
       <div class="card-3d-wrapper reveal reveal-delay-1">
         <div class="card-3d" data-tilt>
@@ -1427,16 +1654,16 @@ footer::before {
       </div>
     </div>
   </div>
-
+ 
   <footer>
     <div class="footer-logo">T.A.D.A</div>
     <p class="footer-metin">Tarihin Arka Dünyası Atölyeleri · Balıkesir Anadolu İmam Hatip Lisesi · 2026</p>
   </footer>
 </div>
-
+ 
 <!-- ===== KULÜP MODELİ ===== -->
 <div id="model" class="sayfa">
-
+ 
   <div class="model-hero">
     <div class="reveal">
       <div class="bolum-on-yazi">KULÜP MODELİ</div>
@@ -1445,7 +1672,7 @@ footer::before {
       <div class="bolum-alt">Bilgi nesilleri arasında öğrenci eliyle taşınır</div>
     </div>
   </div>
-
+ 
   <div class="kademe-bolum">
     <div class="kademe-grid reveal">
       <div class="kademe-kart" style="position:relative;">
@@ -1476,7 +1703,7 @@ footer::before {
       </div>
     </div>
   </div>
-
+ 
   <!-- Kurallar -->
   <div class="kurallar">
     <div class="kurallar-baslik reveal">
@@ -1484,7 +1711,7 @@ footer::before {
       <div class="bolum-baslik">KULÜP TÜZÜĞÜ</div>
       <div class="separator"><div class="separator-cizgi"></div><div class="separator-nokta"></div><div class="separator-cizgi"></div></div>
     </div>
-
+ 
     <div class="kural-item reveal">
       <div class="kural-no">01</div>
       <div class="kural-icerik">
@@ -1535,7 +1762,7 @@ footer::before {
       </div>
     </div>
   </div>
-
+ 
   <!-- ===== 50 ESER ===== -->
   <div class="kaynaklar-bolum">
     <div class="kaynaklar-baslik-wrap reveal">
@@ -1596,18 +1823,18 @@ footer::before {
       <div class="kaynak-item reveal"><div class="kaynak-no">49</div><div class="kaynak-bilgi"><div class="kaynak-ad">Göktürkler</div><div class="kaynak-yazar">Ahmet Taşağıl · TTK YAYINLARI</div></div></div>
       <div class="kaynak-item reveal"><div class="kaynak-no">50</div><div class="kaynak-bilgi"><div class="kaynak-ad">İslam Öncesi Türk Tarihi</div><div class="kaynak-yazar">Prof. Dr. İbrahim Kafesoğlu · ÖTÜKEN YAYINEVİ</div></div></div>
     </div>
-
+ 
   </div>
-
+ 
   <footer>
     <div class="footer-logo">T.A.D.A</div>
     <p class="footer-metin">Tarihin Arka Dünyası Atölyeleri · Balıkesir Anadolu İmam Hatip Lisesi · 2026</p>
   </footer>
 </div>
-
+ 
 <!-- ===== DEĞERLER ===== -->
 <div id="degerler" class="sayfa">
-
+ 
   <div class="degerler-hero">
     <div class="reveal">
       <div class="bolum-on-yazi">DEĞERLERİMİZ</div>
@@ -1616,7 +1843,7 @@ footer::before {
       <div class="bolum-alt">Bozkırın ve taşın sesi — T.A.D.A'nın iki kurucu ilham kaynağı</div>
     </div>
   </div>
-
+ 
   <div class="degerler-grid">
     <div class="deger-kart reveal reveal-left">
       <div class="deger-foto" style="position:relative;overflow:hidden;background:linear-gradient(160deg,#1A0D00 0%,#0D0700 100%);">
@@ -1642,7 +1869,7 @@ footer::before {
         </div>
       </div>
     </div>
-
+ 
     <div class="deger-kart reveal reveal-right">
       <div class="deger-foto" style="position:relative;overflow:hidden;background:linear-gradient(160deg,#001A0D 0%,#000D07 100%);">
         <img src="data:image/png;base64,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6V3nhefT6m+nk2VcJohcr6V3nhefT6nK+ld54Xn0+pvp5NlXCaIXK+ld54Xn0+pyvpXeeF59Pqb6eTZVwmiFyvpXeeF59Pqcr6V3nhefT6m+nk2VcJohcr6V3nhefT6nK+ld54Xn0+pvp5NlXCaIXK+ld54Xn0+pyvpXeeF59Pqb6eTZVwmiFyvpXeeF59Pqcr6V3nhefT6m+nk2VcJohcr6V3nhefT6nK+ld54Xn0+pvp5NlXCaIXK+ld54Xn0+pyvpXeeF59Pqb6eTZVwmiFyvpXeeF59Pqcr6V3nhefT6m+nk2VcJohcr6V3nhefT6nK+ld54Xn0+pvp5NlXCaIXK+ld54Xn0+pyvpXeeF59Pqb6eTZVwmiFyvpXeeF59Pqcr6V3nhefT6m+nk2VcJohcr6V3nhefT6nK+ld54Xn0+pvp5NlXCaIXK+ld54Xn0+pyvpXeeF59Pqb6eTZVwmiFyvpXeeF59Pqcr6V3nhefT6m+nk2VcJohcr6V3nhefT6nK+ld54Xn0+pvp5NlXCaIXK+ld54Xn0+pyvpXeeF59Pqb6eTZVwmiFyvpXeeF59Pqcr6V3nhefT6m+nk2VcJohcr6V3nhefT6nK+ld54Xn0+pvp5NlXCaIXK+ld54Xn0+pyvpXeeF59Pqb6eTZVwmiFyvpXeeF59Pqcr6V3nhefT6m+nk2VcJohcr6V3nhefT6nK+ld54Xn0+pvp5NlXCaIXK+ld54Xn0+pyvpXeeF59Pqb6eTZVwmiFyvpXeeF59Pqcr6V3nhefT6m+nk2VcJohcr6V3nhefT6nK+ld54Xn0+pvp5NlXCaIXK+ld54Xn0+pyvpXeeF59Pqb6eTZVw//Z" alt="Bilge Kağan - Göktürk Bayrağı" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.85;">
@@ -1668,7 +1895,7 @@ footer::before {
       </div>
     </div>
   </div>
-
+ 
   <!-- Sentez -->
   <div class="sentez-bolum reveal">
     <div class="sentez-icerik">
@@ -1684,7 +1911,7 @@ footer::before {
       </p>
     </div>
   </div>
-
+ 
   <!-- Atalar -->
   <div class="atalar-bolum">
     <div class="reveal" style="text-align:center;margin-bottom:56px;">
@@ -1693,7 +1920,7 @@ footer::before {
       <div class="separator"><div class="separator-cizgi"></div><div class="separator-nokta"></div><div class="separator-cizgi"></div></div>
       <div class="bolum-alt" style="margin-bottom:0;">Tarihin derinliklerinden gelen yıldızlar — T.A.D.A'nın ilham kaynakları</div>
     </div>
-
+ 
     <div class="atalar-grid">
       <div class="ata-kart reveal reveal-delay-1">
         <div class="ata-donem">OSMANLI · İTTİHAT VE TERAKKİ</div>
@@ -1705,7 +1932,7 @@ footer::before {
           <div class="ata-etiket-alt">Vatan Sevgisi & Adanmışlık — Divan Yolu'ndan Türkistan'a uzanan destanın simgesi</div>
         </div>
       </div>
-
+ 
       <div class="ata-kart reveal reveal-delay-2">
         <div class="ata-donem">CUMHURİYET · MODERN TÜRKİYE'NİN KURUCUSU</div>
         <div class="ata-isim">MUSTAFA KEMAL ATATÜRK</div>
@@ -1716,7 +1943,7 @@ footer::before {
           <div class="ata-etiket-alt">Akıl & İdealizm — Modern Türkiye'nin kuruluş ruhunun simgesi</div>
         </div>
       </div>
-
+ 
       <div class="ata-kart reveal reveal-delay-1">
         <div class="ata-donem">BÜYÜK SELÇUKLU</div>
         <div class="ata-isim">SULTAN ALPARSLAN</div>
@@ -1727,7 +1954,7 @@ footer::before {
           <div class="ata-etiket-alt">Anadolu'yu vatan yapan iradenin simgesi</div>
         </div>
       </div>
-
+ 
       <div class="ata-kart reveal reveal-delay-2">
         <div class="ata-donem">OSMANLI</div>
         <div class="ata-isim">FATİH SULTAN MEHMET</div>
@@ -1738,7 +1965,7 @@ footer::before {
           <div class="ata-etiket-alt">Akıl ve cesareti bir arada taşımanın simgesi</div>
         </div>
       </div>
-
+ 
       <div class="ata-kart reveal reveal-delay-3">
         <div class="ata-donem">OSMANLI</div>
         <div class="ata-isim">YILDIRIM BAYEZİD</div>
@@ -1749,7 +1976,7 @@ footer::before {
           <div class="ata-etiket-alt">Yenilgiyle de olsa ayakta duran onurun simgesi</div>
         </div>
       </div>
-
+ 
       <div class="ata-kart reveal reveal-delay-1">
         <div class="ata-donem">TİMURLULAR</div>
         <div class="ata-isim">EMİR TİMUR</div>
@@ -1760,7 +1987,7 @@ footer::before {
           <div class="ata-etiket-alt">Tarihin çok yönlü okunması gerektiğinin simgesi</div>
         </div>
       </div>
-
+ 
       <div class="ata-kart reveal reveal-delay-2">
         <div class="ata-donem">SAFEVÎ</div>
         <div class="ata-isim">ŞAH İSMAİL</div>
@@ -1771,7 +1998,7 @@ footer::before {
           <div class="ata-etiket-alt">Tarafsız araştırmanın sınırlarını zorlayan figür</div>
         </div>
       </div>
-
+ 
       <div class="ata-kart reveal reveal-delay-3">
         <div class="ata-donem">OSMANLI</div>
         <div class="ata-isim">YAVUZ SULTAN SELİM</div>
@@ -1784,16 +2011,217 @@ footer::before {
       </div>
     </div>
   </div>
-
+ 
   <footer>
     <div class="footer-logo">T.A.D.A</div>
     <p class="footer-metin">Tarihin Arka Dünyası Atölyeleri · Balıkesir Anadolu İmam Hatip Lisesi · 2026</p>
   </footer>
 </div>
-
+ 
+<!-- ===== GALERİ ===== -->
+<div id="galeri" class="sayfa">
+ 
+  <div class="galeri-hero">
+    <div class="reveal">
+      <div class="bolum-on-yazi">GÖRSEL ARŞİV</div>
+      <div class="bolum-baslik">GALERİ</div>
+      <div class="separator"><div class="separator-cizgi"></div><div class="separator-nokta"></div><div class="separator-cizgi"></div></div>
+      <div class="bolum-alt">Atölye çalışmaları, kulüp odası ve etkinliklerden kareler</div>
+    </div>
+  </div>
+ 
+  <!-- Bilgi kutusu -->
+  <div class="galeri-bilgi reveal">
+    <div class="galeri-bilgi-kutu">
+      <div class="galeri-bilgi-baslik">📸 GALERİ YAKINDA AKTİF OLACAK</div>
+      <p>
+        Kulüp resmi olarak kurulduğunda bu bölüm; atölye fotoğrafları, kulüp odamızın görüntüleri, etkinlik kareleri ve araştırma sunumlarıyla dolacak.
+        Takipte kalın — her yeni etkinlik bu arşive eklenecek.
+      </p>
+    </div>
+  </div>
+ 
+  <!-- Placeholder grid -->
+  <div class="galeri-grid">
+ 
+    <div class="galeri-kart reveal reveal-delay-1">
+      <div class="galeri-kart-overlay"></div>
+      <div class="galeri-kart-icerik">
+        <div class="galeri-kart-ikon">🏛️</div>
+        <div class="galeri-kart-etiket">Kulüp Odası</div>
+        <div class="galeri-kart-baslik">Çalışma alanı & kütüphane fotoğrafları</div>
+      </div>
+    </div>
+ 
+    <div class="galeri-kart reveal reveal-delay-2">
+      <div class="galeri-kart-overlay"></div>
+      <div class="galeri-kart-icerik">
+        <div class="galeri-kart-ikon">📚</div>
+        <div class="galeri-kart-etiket">Atölye Çalışmaları</div>
+        <div class="galeri-kart-baslik">Tez-antitez-sentez oturumlarından</div>
+      </div>
+    </div>
+ 
+    <div class="galeri-kart reveal reveal-delay-3">
+      <div class="galeri-kart-overlay"></div>
+      <div class="galeri-kart-icerik">
+        <div class="galeri-kart-ikon">🎤</div>
+        <div class="galeri-kart-etiket">Açık Etkinlikler</div>
+        <div class="galeri-kart-baslik">Okul geneli sunum & konferanslar</div>
+      </div>
+    </div>
+ 
+    <div class="galeri-kart reveal reveal-delay-1">
+      <div class="galeri-kart-overlay"></div>
+      <div class="galeri-kart-icerik">
+        <div class="galeri-kart-ikon">🏆</div>
+        <div class="galeri-kart-etiket">SosyalFest 2026</div>
+        <div class="galeri-kart-baslik">Proje sunum & yarışma kareleri</div>
+      </div>
+    </div>
+ 
+    <div class="galeri-kart reveal reveal-delay-2">
+      <div class="galeri-kart-overlay"></div>
+      <div class="galeri-kart-icerik">
+        <div class="galeri-kart-ikon">🔗</div>
+        <div class="galeri-kart-etiket">Devir Teslim</div>
+        <div class="galeri-kart-baslik">Çırak-kalfa-usta devir seremonisi</div>
+      </div>
+    </div>
+ 
+    <div class="galeri-kart reveal reveal-delay-3">
+      <div class="galeri-kart-overlay"></div>
+      <div class="galeri-kart-icerik">
+        <div class="galeri-kart-ikon">📖</div>
+        <div class="galeri-kart-etiket">Araştırma Arşivi</div>
+        <div class="galeri-kart-baslik">Üyelerimizin hazırladığı sunumlar</div>
+      </div>
+    </div>
+ 
+  </div>
+ 
+  <footer>
+    <div class="footer-logo">T.A.D.A</div>
+    <p class="footer-metin">Tarihin Arka Dünyası Atölyeleri · Balıkesir Anadolu İmam Hatip Lisesi · 2026</p>
+  </footer>
+</div>
+ 
+<!-- ===== SOSYALFEST ===== -->
+<div id="sosyalfest" class="sayfa">
+ 
+  <div class="sosyalfest-hero">
+    <div class="reveal">
+      <div style="display:flex;justify-content:center;margin-bottom:24px;">
+        <div class="sosyalfest-rozet">🏆 SosyalFest 2026 · Türkiye'nin Değerleri Kategorisi</div>
+      </div>
+      <div class="bolum-on-yazi">YARIŞMA PROJESİ</div>
+      <div class="bolum-baslik">SOSYALFEST 2026</div>
+      <div class="separator"><div class="separator-cizgi"></div><div class="separator-nokta"></div><div class="separator-cizgi"></div></div>
+      <div class="bolum-alt">T.A.D.A, SosyalFest 2026 yarışmasında "Türkiye'nin Değerleri" kategorisinde lise düzeyinde temsil ediliyor</div>
+    </div>
+  </div>
+ 
+  <!-- Proje Bilgileri -->
+  <div class="sosyalfest-bilgi-grid">
+    <div class="sf-bilgi-kart reveal reveal-delay-1">
+      <span class="sf-bilgi-ikon">🎯</span>
+      <div class="sf-bilgi-baslik">KATEGORİ</div>
+      <div class="sf-bilgi-deger">Türkiye'nin Değerleri</div>
+      <div class="sf-bilgi-aciklama">Lise düzeyinde sosyal model tasarım kategorisi. T.A.D.A, Türk tarih kültürünü genç nesillere aktarma modeliyle bu kategoriye başvurdu.</div>
+    </div>
+    <div class="sf-bilgi-kart reveal reveal-delay-2">
+      <span class="sf-bilgi-ikon">🏫</span>
+      <div class="sf-bilgi-baslik">PILOT OKUL</div>
+      <div class="sf-bilgi-deger">Balıkesir Anadolu İHLisesi</div>
+      <div class="sf-bilgi-aciklama">Proje, Balıkesir Anadolu İmam Hatip Lisesi bünyesinde pilot uygulama olarak başlatılacak; ardından Türkiye geneline yayılması hedefleniyor.</div>
+    </div>
+    <div class="sf-bilgi-kart reveal reveal-delay-1">
+      <span class="sf-bilgi-ikon">👤</span>
+      <div class="sf-bilgi-baslik">PROJE SAHİBİ</div>
+      <div class="sf-bilgi-deger">Furkan Uysal</div>
+      <div class="sf-bilgi-aciklama">Proje, T.A.D.A'nın kurucusu ve danışman öğretmen Ayhan Keskin tarafından birlikte hazırlandı.</div>
+    </div>
+    <div class="sf-bilgi-kart reveal reveal-delay-2">
+      <span class="sf-bilgi-ikon">📅</span>
+      <div class="sf-bilgi-baslik">TARİH</div>
+      <div class="sf-bilgi-deger">2026</div>
+      <div class="sf-bilgi-aciklama">SosyalFest 2026 yarışmasına sunulan proje, değerlendirme sürecindedir. Sonuçlar açıklandığında bu sayfadan duyurulacaktır.</div>
+    </div>
+  </div>
+ 
+  <!-- Belge indirme banner -->
+  <div class="sosyalfest-belge-banner reveal">
+    <div class="banner-icerik">
+      <div class="bolum-on-yazi" style="text-align:center;">PROJE DOKÜMANI</div>
+      <p style="font-size:17px;color:var(--krem);font-style:italic;line-height:1.8;margin-bottom:28px;">
+        T.A.D.A'nın SosyalFest 2026 başvuru dosyası; kulüp modeli, felsefi temeli,<br>
+        çalışma yöntemi ve ulusal yayılım planını kapsıyor.
+      </p>
+      <a href="tada_birlesik_v5.docx" target="_blank" class="btn-altin" style="text-decoration:none;display:inline-block;padding:16px 44px;font-size:10px;letter-spacing:4px;">
+        PROJE DOSYASINI İNCELE
+      </a>
+    </div>
+  </div>
+ 
+  <!-- Hedefler -->
+  <div class="sosyalfest-hedefler">
+    <div class="reveal" style="text-align:center;margin-bottom:50px;">
+      <div class="bolum-on-yazi">NE YAPMAK İSTİYORUZ?</div>
+      <div class="bolum-baslik">PROJE HEDEFLERİ</div>
+      <div class="separator"><div class="separator-cizgi"></div><div class="separator-nokta"></div><div class="separator-cizgi"></div></div>
+    </div>
+ 
+    <div class="hedef-item reveal">
+      <div class="hedef-no">01</div>
+      <div>
+        <div class="hedef-baslik">EZBER EĞİTİMİNİN ÖNÜNE GEÇMEK</div>
+        <div class="hedef-metin">Türkiye'de tarih eğitimi büyük ölçüde sınav odaklı ve tek yönlüdür. T.A.D.A'nın tez-antitez-sentez yöntemi, ezber yerine gerçek bir tarih bilinci oluşturmayı hedefler.</div>
+      </div>
+    </div>
+ 
+    <div class="hedef-item reveal reveal-delay-1">
+      <div class="hedef-no">02</div>
+      <div>
+        <div class="hedef-baslik">KURUMSAL HAFIZAYI KORUMAK</div>
+        <div class="hedef-metin">Türkiye'deki okul kulüplerinin büyük çoğunluğu danışman öğretmen değiştiğinde çöküyor. Çırak-kalfa-usta devir teslim sistemi bu sorunu öğrenci eliyle çözüyor.</div>
+      </div>
+    </div>
+ 
+    <div class="hedef-item reveal reveal-delay-2">
+      <div class="hedef-no">03</div>
+      <div>
+        <div class="hedef-baslik">EKONOMİK EŞİTSİZLİĞİ GİDERMEK</div>
+        <div class="hedef-metin">Maddi yetersizliği olan okullar nitelikli tarih kaynaklarına erişemiyor. MEB ve STK destek mekanizması, bu engeli ortadan kaldırmayı hedefler.</div>
+      </div>
+    </div>
+ 
+    <div class="hedef-item reveal reveal-delay-3">
+      <div class="hedef-no">04</div>
+      <div>
+        <div class="hedef-baslik">ULUSAL YAYILIM</div>
+        <div class="hedef-metin">Balıkesir'de pilot olarak başlayan T.A.D.A modeli, başarısı bağımsız akademik otoriteler tarafından teyit edildikten sonra MEB kanalıyla Türkiye geneline yayılacaktır.</div>
+      </div>
+    </div>
+ 
+    <div class="hedef-item reveal">
+      <div class="hedef-no">05</div>
+      <div>
+        <div class="hedef-baslik">SOSYAL ETKİ: NEDEN ÖNEMLİ?</div>
+        <div class="hedef-metin">Başarılı bir pilot uygulama; 80.000'den fazla okulda milyonlarca öğrenciye ulaşabilecek bir model demektir. T.A.D.A yalnızca bir kulüp değil — bir eğitim devrimi taslağıdır.</div>
+      </div>
+    </div>
+ 
+  </div>
+ 
+  <footer>
+    <div class="footer-logo">T.A.D.A</div>
+    <p class="footer-metin">Tarihin Arka Dünyası Atölyeleri · Balıkesir Anadolu İmam Hatip Lisesi · 2026</p>
+  </footer>
+</div>
+ 
 <!-- ===== BAŞVURU ===== -->
 <div id="basvuru" class="sayfa">
-
+ 
   <div class="iletisim-hero">
     <div class="reveal">
       <div class="bolum-on-yazi">KULÜP ÜYELİĞİ</div>
@@ -1802,9 +2230,9 @@ footer::before {
       <div class="bolum-alt">T.A.D.A ailesine katılmak için aşağıdaki formu doldurun</div>
     </div>
   </div>
-
+ 
   <div class="basvuru-form-wrapper" style="max-width:700px;margin:0 auto;padding:0 40px 100px;">
-
+ 
     <div class="basvuru-bilgi reveal">
       <div class="basvuru-bilgi-baslik">BAŞVURU ÖNCESİ BİLGİLENDİRME</div>
       <p>• Kulübe yalnızca <strong style="color:var(--altin)">9, 10 ve 11. sınıf</strong> öğrencileri başvurabilir.</p>
@@ -1812,26 +2240,26 @@ footer::before {
       <p>• Seçim kriteri not ortalaması değil; merak, analitik düşünce ve tarih sevgisidir.</p>
       <p>• Başvurunuz tarafımıza ulaştıktan sonra en geç 7 iş günü içinde geri dönüş yapılır.</p>
     </div>
-
+ 
     <form name="tada-basvuru" method="POST" data-netlify="true" netlify-honeypot="bot-alan" style="display:flex;flex-direction:column;gap:28px;" class="reveal">
       <input type="hidden" name="form-name" value="tada-basvuru">
       <input name="bot-alan" style="display:none">
-
+ 
       <div class="form-alan">
         <label class="form-label">Ad Soyad *</label>
         <input type="text" name="ad-soyad" required placeholder="Adınız ve soyadınız" class="form-input">
       </div>
-
+ 
       <div class="form-alan">
         <label class="form-label">Takma Ad <span style="opacity:.4;font-size:10px;letter-spacing:1px;">(isteğe bağlı)</span></label>
         <input type="text" name="takma-ad" placeholder="Kulüp içinde kullanmak istediğiniz takma ad" class="form-input">
       </div>
-
+ 
       <div class="form-alan">
         <label class="form-label">E-posta *</label>
         <input type="email" name="eposta" required placeholder="ornek@gmail.com" class="form-input">
       </div>
-
+ 
       <div class="form-alan">
         <label class="form-label">Sınıf *</label>
         <select name="sinif" required class="form-select" style="background:rgba(107,15,26,0.2);border:1px solid rgba(201,168,76,0.15);padding:15px 18px;color:var(--krem);font-family:'Crimson Text',serif;font-size:16px;outline:none;width:100%;">
@@ -1841,28 +2269,28 @@ footer::before {
           <option value="11" style="background:#0D0205;">11. Sınıf — Usta adayı</option>
         </select>
       </div>
-
+ 
       <div class="form-alan">
         <label class="form-label">Neden katılmak istiyorsunuz? *</label>
         <textarea name="neden" required rows="6" placeholder="T.A.D.A'ya neden katılmak istediğinizi, tarihle ilişkinizi ve kulübe neler katmak istediğinizi kısaca anlatın..." class="form-textarea"></textarea>
         <span style="font-size:12px;color:var(--altin);opacity:.4;font-style:italic;">En az 3 cümle yazmanız tavsiye edilir.</span>
       </div>
-
+ 
       <button type="submit" class="btn-altin" style="margin-top:8px;width:100%;font-size:11px;padding:20px;">
         BAŞVURUYU GÖNDER
       </button>
     </form>
   </div>
-
+ 
   <footer>
     <div class="footer-logo">T.A.D.A</div>
     <p class="footer-metin">Tarihin Arka Dünyası Atölyeleri · Balıkesir Anadolu İmam Hatip Lisesi · 2026</p>
   </footer>
 </div>
-
+ 
 <!-- ===== İLETİŞİM ===== -->
 <div id="iletisim" class="sayfa">
-
+ 
   <div class="iletisim-hero">
     <div class="reveal">
       <div class="bolum-on-yazi">BİZE ULAŞIN</div>
@@ -1871,7 +2299,7 @@ footer::before {
       <div class="bolum-alt">Kulüp hakkında bilgi almak, destek vermek veya iş birliği için</div>
     </div>
   </div>
-
+ 
   <div class="iletisim-grid">
     <div class="iletisim-kart reveal reveal-delay-1">
       <span class="iletisim-ikon">🏫</span>
@@ -1881,7 +2309,7 @@ footer::before {
     <div class="iletisim-kart reveal reveal-delay-2">
       <span class="iletisim-ikon">📧</span>
       <div class="iletisim-baslik">E-POSTA</div>
-      <div class="iletisim-metin"><a href="mailto:t.a.d.a1955t.c@gmail.com" style="color:inherit;">t.a.d.a1955t.c@gmail.com</a></div>
+      <div class="iletisim-metin"><a href="/cdn-cgi/l/email-protection#98ecb6f9b6fcb6f9a9a1adadecb6fbd8fff5f9f1f4b6fbf7f5" style="color:inherit;"><span class="__cf_email__" data-cfemail="bdc993dc93d993dc8c848888c993defddad0dcd4d193ded2d0">[email&#160;protected]</span></a></div>
     </div>
     <div class="iletisim-kart reveal reveal-delay-3">
       <span class="iletisim-ikon">🌐</span>
@@ -1894,7 +2322,7 @@ footer::before {
       <div class="iletisim-metin"><a href="tel:+905431776860" style="color:inherit;">0543 177 6860</a></div>
     </div>
   </div>
-
+ 
   <div style="max-width:640px;margin:0 auto 100px;padding:0 40px;">
     <div class="reveal" style="background:rgba(107,15,26,0.15);border:1px solid rgba(201,168,76,0.12);padding:44px;text-align:center;position:relative;overflow:hidden;">
       <div style="position:absolute;top:0;left:20%;right:20%;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,0.3),transparent);"></div>
@@ -1907,13 +2335,16 @@ footer::before {
       </div>
     </div>
   </div>
-
+ 
   <footer>
     <div class="footer-logo">T.A.D.A</div>
     <p class="footer-metin">Tarihin Arka Dünyası Atölyeleri · Balıkesir Anadolu İmam Hatip Lisesi · 2026</p>
   </footer>
 </div>
-
+ 
+<script>
+// email decode inline placeholder - removed external dependency
+</script>
 <script>
 // ===== SAYFA YÖNETİMİ =====
 function sayfaGoster(id) {
@@ -1927,16 +2358,16 @@ function sayfaGoster(id) {
   if (burger) burger.classList.remove('acik');
   setTimeout(initReveal, 100);
 }
-
+ 
 function menuToggle() {
   var menu = document.getElementById('navMenu');
   var burger = document.getElementById('hamburger');
   if (menu) menu.classList.toggle('acik');
   if (burger) burger.classList.toggle('acik');
 }
-
+ 
 // ===== EVENT LISTENERS =====
-document.addEventListener('DOMContentLoaded', function() {
+(function() {
   // data-sayfa linkleri
   document.querySelectorAll('[data-sayfa]').forEach(function(el) {
     el.addEventListener('click', function(e) {
@@ -1944,16 +2375,16 @@ document.addEventListener('DOMContentLoaded', function() {
       sayfaGoster(this.getAttribute('data-sayfa'));
     });
   });
-
+ 
   // Hamburger
   var burger = document.getElementById('hamburger');
   if (burger) burger.addEventListener('click', menuToggle);
-
+ 
   // Nav logo
   var logo = document.querySelector('.nav-logo');
   if (logo) logo.addEventListener('click', function() { sayfaGoster('anasayfa'); });
-});
-
+})();
+ 
 // ===== NAV SCROLL EFEKTİ =====
 window.addEventListener('scroll', function() {
   var nav = document.getElementById('navbar');
@@ -1961,15 +2392,15 @@ window.addEventListener('scroll', function() {
   if (window.scrollY > 30) nav.classList.add('scrolled');
   else nav.classList.remove('scrolled');
 });
-
+ 
 // ===== SCROLL REVEAL =====
 var revealObserver = null;
-
+ 
 function initReveal() {
   if (revealObserver) { revealObserver.disconnect(); revealObserver = null; }
   var reveals = document.querySelectorAll('.sayfa.aktif .reveal, .sayfa.aktif .reveal-left, .sayfa.aktif .reveal-right');
   reveals.forEach(function(el) { el.classList.remove('visible'); });
-
+ 
   revealObserver = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
       if (entry.isIntersecting) {
@@ -1978,9 +2409,9 @@ function initReveal() {
       }
     });
   }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
-
+ 
   reveals.forEach(function(el) { revealObserver.observe(el); });
-
+ 
   setTimeout(function() {
     reveals.forEach(function(el) {
       var rect = el.getBoundingClientRect();
@@ -1991,7 +2422,7 @@ function initReveal() {
     });
   }, 50);
 }
-
+ 
 // ===== PARALLAX =====
 document.addEventListener('mousemove', function(e) {
   var aktifSayfa = document.querySelector('.sayfa.aktif');
@@ -2005,7 +2436,7 @@ document.addEventListener('mousemove', function(e) {
     el.style.transform = 'translate(' + (dx*30*speed) + 'px,' + (dy*30*speed) + 'px)';
   });
 });
-
+ 
 // ===== 3D KART =====
 document.addEventListener('mousemove', function(e) {
   document.querySelectorAll('.card-3d[data-tilt]').forEach(function(card) {
@@ -2026,24 +2457,24 @@ document.addEventListener('mousemove', function(e) {
     }
   });
 });
-
+ 
 document.addEventListener('mouseleave', function() {
   document.querySelectorAll('.card-3d[data-tilt]').forEach(function(card) {
     card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateZ(0)';
   });
 });
-
+ 
 // ===== PARTİKÜLLER =====
 var canvas = document.getElementById('particles-canvas');
 var ctx = canvas ? canvas.getContext('2d') : null;
 var particles = [];
-
+ 
 function resizeCanvas() {
   if (!canvas) return;
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 }
-
+ 
 function createParticles() {
   if (!canvas) return;
   particles = [];
@@ -2062,7 +2493,7 @@ function createParticles() {
     });
   }
 }
-
+ 
 function animateParticles() {
   if (!ctx) return;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -2082,13 +2513,12 @@ function animateParticles() {
   });
   requestAnimationFrame(animateParticles);
 }
-
+ 
 window.addEventListener('resize', function() {
   resizeCanvas();
   createParticles();
 });
-
-// ===== BAŞLANGIÇ =====
+ 
 resizeCanvas();
 createParticles();
 animateParticles();
